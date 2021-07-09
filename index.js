@@ -4,7 +4,7 @@ const app = express();
 const axios = require('axios');
 const bodyParser = require('body-parser');
 
-const API_KEY = "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";
+const API_KEY = "YOUR API KEY";
 const PORT = process.env.PORT || 8000;
 
 const openaiURL = "https://api.openai.com/v1/engines/davinci/completions";

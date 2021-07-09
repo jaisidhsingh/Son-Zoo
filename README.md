@@ -1,13 +1,17 @@
 # OpenAI TLDR
 
 ### Dependancies:
-> React
+> ReactJS
 
-> Node
+> NodeJS
 
 > Concurrently 
 
 > Nodemon 
+
+> Axios
+
+> Express
 
 ### Requires an authorized account with OpenAI's API (beta) and a genuine secret API key
 

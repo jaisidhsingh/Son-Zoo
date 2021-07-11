@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 import axios from 'axios'
-
+import { Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,14 +23,30 @@ class App extends React.Component {
     .then(res => this.setState({data: res.data.message.choices[0].text}))
   }
 
+  handleEvent = (event) => {
+    let value = event.target.value;
+    console.log(value)
+  }
+
   render() {
     return(
-      <div class="App">
+      <div className="App">
         <center>
-        <h1>GPT-3 TL;DR</h1>
-        <input type="text" placeholder="Prompt" onChange={this.handleChange}></input>
-        <button type="submit" onClick={this.handleClick}>Submit</button>
-        <h5>{!this.state.data ? "your tl;dr will appear here": this.state.data}</h5>
+        <h1>
+        A TL;DR generator
+        </h1>
+        <h5>with <span style={{color: 'darkorange'}}>GPT-3 </span> and <span style={{color: 'skyblue'}}>React</span></h5>
+        <div className="form">
+          <Form.Group controlId="formBasicPassword">
+            <Form.Control  type="text" placeholder="Text"  onChange={this.handleChange}/>
+          </Form.Group>
+          </div>
+
+          <Button variant ="light" size="lg" onClick={this.handleClick}>Submit</Button>{' '}
+
+          <div className="result">
+          <p style={{fontSize: 24}}>{!this.state.data ? "After submission, give us a couple of seconds, and your summary will appear here.": this.state.data}</p>
+        </div>
         </center>
       </div>
     );

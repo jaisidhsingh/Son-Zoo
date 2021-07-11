@@ -2,15 +2,14 @@ const querystring = require('querystring');
 const express = require('express');
 const app = express();
 const axios = require('axios');
-const bodyParser = require('body-parser');
 
-const API_KEY = "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";
+const API_KEY = "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";
 const PORT = process.env.PORT || 8000;
 
 const openaiURL = "https://api.openai.com/v1/engines/davinci/completions";
 
 
-
+// sublime text 4 testing mode seems to be working fine damn nigga this shit fast and tight
 const headers = {
   Authorization: 'Bearer '+ String(API_KEY),
   "Content-Type": "application/json",
@@ -29,14 +28,14 @@ app.use(express.urlencoded({
 
 
 app.post('/api', (req, res)=>{
-   axios.post(openaiURL, JSON.stringify({"prompt":req.body.prompt, "max_tokens": 60}), {headers}) 
+   axios.post(openaiURL, JSON.stringify({"prompt":req.body.prompt, "max_tokens": 120}), {headers}) 
       .then(response=>{
         res.send({message: response.data})
-      }).catch(error => console.log("axios error"));
+      }).catch(error => console.error(error));
 })
 
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
-
+//this is a test in vim in windows terminal. working pretty well to be perfectly honest better than the older vim inside windows terminal

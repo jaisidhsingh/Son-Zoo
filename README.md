@@ -28,7 +28,7 @@ or
 ```
 yarn dev
 ```
-The package.json file (/TLDR/package.json) has the following which enables the above:
+The package.json file (./TLDR/package.json) has the following which enables the above:
 ```
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

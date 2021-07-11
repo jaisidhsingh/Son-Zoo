@@ -1,4 +1,5 @@
-# OpenAI TLDR
+# A TL;DR Web Application
+#### ~ with GPT-3 and React
 
 ### Dependancies:
 > ReactJS

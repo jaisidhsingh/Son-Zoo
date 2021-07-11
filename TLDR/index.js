@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 
-const API_KEY = "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";
+const API_KEY = "YOUR API KEY";
 const PORT = process.env.PORT || 8000;
 
 const openaiURL = "https://api.openai.com/v1/engines/davinci/completions";

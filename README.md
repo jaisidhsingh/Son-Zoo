@@ -1,4 +1,5 @@
-# A TL;DR Web Application
+# Son Zoo
+## A comedic and awesome attempt at reviving Sun Tsu to guide you through the troubled roads of life
 #### ~ with GPT-3 and React
 
 ### Dependancies:

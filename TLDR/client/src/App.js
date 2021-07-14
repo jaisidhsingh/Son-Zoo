@@ -20,7 +20,7 @@ class App extends React.Component {
 
   handleClick = () => {
     axios.post("/api",  {"prompt": this.state.prompt})
-    .then(res => this.setState({data: res.data.message.choices[0].text}))
+    .then(res => this.setState({data: res.data.message.choices[0].text+ "  ~  Son Zoo: The Art of War"}))
   }
 
   handleEvent = (event) => {
@@ -33,7 +33,7 @@ class App extends React.Component {
       <div className="App">
         <center>
         <h1>
-        A TL;DR generator
+        Son Zoo
         </h1>
         <h5>with <span style={{color: 'darkorange'}}>GPT-3 </span> and <span style={{color: 'skyblue'}}>React</span></h5>
         <div className="form">
@@ -45,7 +45,7 @@ class App extends React.Component {
           <Button variant ="light" size="lg" onClick={this.handleClick}>Submit</Button>{' '}
 
           <div className="result">
-          <p style={{fontSize: 24}}>{!this.state.data ? "After submission, give us a couple of seconds, and your summary will appear here.": this.state.data}</p>
+          <p style={{fontSize: 24}}>{!this.state.data ? "After submission, give us a couple of seconds, and your response will appear here.": this.state.data}</p>
         </div>
         </center>
       </div>

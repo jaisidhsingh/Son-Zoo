@@ -28,7 +28,7 @@ app.use(express.urlencoded({
 
 
 app.post('/api', (req, res)=>{
-   axios.post(openaiURL, JSON.stringify({"prompt":req.body.prompt, "max_tokens": 120}), {headers}) 
+   axios.post(openaiURL, JSON.stringify({"prompt":req.body.prompt, "max_tokens": 10}), {headers}) 
       .then(response=>{
         res.send({message: response.data})
       }).catch(error => console.error(error));

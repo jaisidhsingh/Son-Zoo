@@ -1,6 +1,8 @@
 # Son Zoo
 ## The comedic revelations of Sun Tzu's wisdom.
-(produces a swirlig vortex of entropy as responses, and of course that's funny)
+Produces a swirlig vortex of entropy as responses, and of course that's funny.
+Started off as a TL;DR generator.
+
 
 #### ~ with GPT-3 and React
 

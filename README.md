@@ -1,5 +1,7 @@
 # Son Zoo
-## A comedic and awesome attempt at reviving Sun Tsu to guide you through the troubled roads of life
+## The comedic revelations of Sun Tzu's wisdom.
+(produces a swirlig vortex of entropy as responses, and of course that's funny)
+
 #### ~ with GPT-3 and React
 
 ### Dependancies:

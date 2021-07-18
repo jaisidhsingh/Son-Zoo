@@ -34,6 +34,7 @@ or
 ```
 yarn dev
 ```
+
 The package.json file (./TLDR/package.json) has the following which enables the above:
 ```
   "scripts": {
@@ -42,4 +43,10 @@ The package.json file (./TLDR/package.json) has the following which enables the 
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+```
+
+Be sure to add the following proxy in the React app's package.json (./TLDR/client/package.json):
+
+```
+"proxy": "http://localhost:8000"
 ```
